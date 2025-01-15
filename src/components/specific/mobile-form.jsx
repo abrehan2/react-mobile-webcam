@@ -4,6 +4,8 @@ import { content } from "../../constants/content/data";
 import { useMobileForm } from "../../contexts/mobile-form-context";
 import { mobileFormKeys } from "../../schemas/mobile-form-schema";
 import MediaUpload from "./media-upload";
+import { toast } from "react-hot-toast";
+
 export default function MobileForm() {
   const { formHook } = useMobileForm();
   const [activeDisable, setActiveDisable] = useState(false);
@@ -19,6 +21,10 @@ export default function MobileForm() {
       setActiveDisable(true);
     }
   }, [picture, short_video]);
+
+  function submitHandler() {
+    toast.success("Form submitted successfully");
+  }
 
   return (
     <>
@@ -48,8 +54,9 @@ export default function MobileForm() {
       <div className="space-y-3 w-full">
         <button
           className="btn bg-primary hover:bg-primary text-white w-full rounded-sm outline-none border-none"
-          type="submit"
+          type="button"
           disabled={activeDisable}
+          onClick={formHook.handleSubmit(submitHandler)}
         >
           Submit
         </button>
