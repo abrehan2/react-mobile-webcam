@@ -1,6 +1,9 @@
 // Imports:
 import MetaData from "../../components/generics/meta-data";
 import Wrapper from "../../layouts/wrapper";
+import MobileForm from "../../components/specific/mobile-form";
+import MobileHeader from "../../components/specific/mobile-header";
+import { MobileFormProvider } from "../../contexts/mobile-form-context";
 
 export default function Mobile() {
   return (
@@ -9,7 +12,13 @@ export default function Mobile() {
       <Wrapper
         className={"block md:hidden lg:hidden xl:hidden overflow-y-auto"}
       >
-        <p className="text-black">This is a mobile layout for a webcam.</p>
+        <div className="container py-10 px-5 space-y-5">
+          <MobileHeader />
+          <div className="divider"></div>
+          <MobileFormProvider>
+            <MobileForm />
+          </MobileFormProvider>
+        </div>
       </Wrapper>
     </>
   );
