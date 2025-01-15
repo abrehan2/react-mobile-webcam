@@ -1,3 +1,16 @@
+// Imports:
+import { useEffect } from 'react';
+import { Outlet } from 'react-router-dom';
+import webfont from 'webfontloader';
+
 export default function App() {
-  return <p>This is an App.</p>
+  useEffect(() => {
+    // Web Font Loader:
+    webfont.load({
+      google: {
+        families: ['Inter:200,300,400,500,600,700,800'],
+      },
+    });
+  }, []);
+  return <Outlet />;
 }
