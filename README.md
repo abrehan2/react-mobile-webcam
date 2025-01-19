@@ -1,5 +1,5 @@
 <div align="center">
-  <h3 align="center">React-Mobile-Webcam</h3>
+  <h3 align="center">React Mobile Webcam</h3>
    <div>
 <img src="https://img.shields.io/badge/-JavaScript-black?style=for-the-badge&logoColor=white&logo=javascript&color=F7DF1E" alt="javascript" />
 <img src="https://img.shields.io/badge/-Tailwind%20CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=38B2AC" alt="tailwindcss" />
