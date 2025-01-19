@@ -1,4 +1,4 @@
-<div style="">
+<div>
     <img src="https://iili.io/2PgZbbR.png" alt="React Mobile Webcam Preview" style="max-width: 100%; height: auto;" />
   </div>
 
