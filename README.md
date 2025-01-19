@@ -14,7 +14,7 @@
 
 ## <a name="introduction">Introduction</a>
 
-A ready-to-use component built from scratch, enabling photo and video capture directly within your form. Simple, seamless, and made for your project. 📸🎥
+A custom-built, ready-to-use component designed to seamlessly integrate photo and video capture into your forms. Whether it's snapping photos or recording videos, this solution ensures instant uploads, making it effortless to capture and share visual content within your project. 📸🎥
 
 ## <a name="quick-start">Quick Start</a>
 
